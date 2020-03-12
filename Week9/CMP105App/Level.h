@@ -4,7 +4,11 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
-
+#include "Ball.h"
+#include "BeachBallManager.h"
+#include "SpriteManager.h"
+#include "Player.h"
+#include "BulletManager.h"
 
 class Level{
 public:
@@ -23,4 +27,14 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+	BeachBallManager manager;
+	SpriteManager spritemanager;
+	Player player;
+	BulletManager bulletmanager;
+
+
+	float playerX;
+	float playerY;
+	float spacepressed;
+	float Gpressed;
 };
